@@ -4,7 +4,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 
 > These are hypothetical interview scenarios and engineering exercises. They are not a claim about Netflix's private production architecture or its actual interview process.
 
-> **Canonical shared foundations:** Reusable Linux, Kubernetes, networking, service-mesh, eBPF, cloud, Terraform, observability, reliability, and leadership chapters are being consolidated in [`hatan4ik/staff-sre-platform-engineering-handbook`](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook). This repository remains the Netflix/media-delivery interview track. Existing foundational chapters here are migration sources until equivalent canonical coverage is verified.
+> **Canonical shared foundations:** Reusable Linux, Kubernetes, networking, service-mesh, eBPF, cloud, Terraform, observability, reliability, and leadership chapters are consolidated in [`hatan4ik/staff-sre-platform-engineering-handbook`](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook). This repository remains the Netflix/media-delivery interview track. Existing foundational chapters here are migration sources until equivalent canonical coverage is verified.
 
 ## Repository contents
 
@@ -17,11 +17,22 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 ### Ground-up curriculum and migration sources
 
 - [`curriculum/01-fine-grained-service-discovery.md`](curriculum/01-fine-grained-service-discovery.md) — Question 1: fine-grained service discovery across 1,000+ services with Envoy/Istio.
-- [`curriculum/02-ebpf-cilium-runtime-security.md`](curriculum/02-ebpf-cilium-runtime-security.md) — Question 2: Linux eBPF foundations, Cilium/Hubble networking, Falco detection, and Tetragon runtime enforcement.
+- [`curriculum/02-ebpf-cilium-runtime-security.md`](curriculum/02-ebpf-cilium-runtime-security.md) — Question 2: original deep source material for eBPF/Cilium runtime security.
 - [`curriculum/03-multicloud-routing-identity-secrets.md`](curriculum/03-multicloud-routing-identity-secrets.md) — Question 3: multi-cloud routing, workload identity federation, and secret delivery.
 - [`curriculum/04-eks-systemd-node-failure-repair.md`](curriculum/04-eks-systemd-node-failure-repair.md) — Question 4: EKS node failure detection, fencing, repair, and replacement.
 
-New reusable foundations will be written in the shared handbook. New files here should focus on Netflix/media-specific questions, answer adapters, playback failure modes, and mock interviews.
+## Shared canonical prerequisites
+
+- [Linux Internals module](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/tree/main/core/linux)
+  - [Architecture, boot, PID 1, systemd, and syscalls](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/01-architecture-boot-syscalls.md)
+  - [Processes, scheduling, cgroup CPU, interrupts, and load](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/02-processes-scheduler.md)
+  - [Memory, page cache, NUMA, reclaim, PSI, and OOM](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/03-memory.md)
+  - [VFS, filesystems, block I/O, NVMe, and latency](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/04-storage-io.md)
+- [Canonical eBPF, Cilium, Hubble, Falco, and Tetragon chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/ebpf-security/cilium-hubble-falco-tetragon.md)
+- [Consolidated curriculum map](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/curriculum-map.md)
+- [Migration and ownership plan](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/MIGRATION_PLAN.md)
+
+New reusable foundations must be written in the shared handbook. New files here should focus on Netflix/media-specific questions, answer adapters, playback failure modes, streaming traffic patterns, and mock interviews.
 
 ## The 17-scenario sequence
 
