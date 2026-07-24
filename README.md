@@ -15,6 +15,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 ### Ground-up curriculum
 
 - [`curriculum/01-fine-grained-service-discovery.md`](curriculum/01-fine-grained-service-discovery.md) — Question 1: fine-grained service discovery across 1,000+ services with Envoy/Istio.
+- [`curriculum/02-ebpf-cilium-runtime-security.md`](curriculum/02-ebpf-cilium-runtime-security.md) — Question 2: Linux eBPF foundations, Cilium/Hubble networking, Falco detection, and Tetragon runtime enforcement.
 
 Additional chapters will be added in the original interview-question sequence. The Markdown editions are the canonical repository source so they remain searchable, reviewable, and easy to improve through normal Git history.
 
