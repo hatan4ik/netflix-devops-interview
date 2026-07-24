@@ -4,6 +4,8 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 
 > These are hypothetical interview scenarios and engineering exercises. They are not a claim about Netflix's private production architecture or its actual interview process.
 
+> **Canonical shared foundations:** Reusable Linux, Kubernetes, networking, service-mesh, eBPF, cloud, Terraform, observability, reliability, and leadership chapters are being consolidated in [`hatan4ik/staff-sre-platform-engineering-handbook`](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook). This repository remains the Netflix/media-delivery interview track. Existing foundational chapters here are migration sources until equivalent canonical coverage is verified.
+
 ## Repository contents
 
 ### Comprehensive training pack
@@ -12,12 +14,14 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 - [`docs/FAANG_BOARD_REVIEW.md`](docs/FAANG_BOARD_REVIEW.md) — Staff/Principal engineering-board review and corrections.
 - [`docs/FAANG_BAR_RAISER_ARCHITECTURE_ADDENDUM.md`](docs/FAANG_BAR_RAISER_ARCHITECTURE_ADDENDUM.md) — hyperscale failure-mode and mechanical-sympathy addendum.
 
-### Ground-up curriculum
+### Ground-up curriculum and migration sources
 
 - [`curriculum/01-fine-grained-service-discovery.md`](curriculum/01-fine-grained-service-discovery.md) — Question 1: fine-grained service discovery across 1,000+ services with Envoy/Istio.
 - [`curriculum/02-ebpf-cilium-runtime-security.md`](curriculum/02-ebpf-cilium-runtime-security.md) — Question 2: Linux eBPF foundations, Cilium/Hubble networking, Falco detection, and Tetragon runtime enforcement.
+- [`curriculum/03-multicloud-routing-identity-secrets.md`](curriculum/03-multicloud-routing-identity-secrets.md) — Question 3: multi-cloud routing, workload identity federation, and secret delivery.
+- [`curriculum/04-eks-systemd-node-failure-repair.md`](curriculum/04-eks-systemd-node-failure-repair.md) — Question 4: EKS node failure detection, fencing, repair, and replacement.
 
-Additional chapters will be added in the original interview-question sequence. The Markdown editions are the canonical repository source so they remain searchable, reviewable, and easy to improve through normal Git history.
+New reusable foundations will be written in the shared handbook. New files here should focus on Netflix/media-specific questions, answer adapters, playback failure modes, and mock interviews.
 
 ## The 17-scenario sequence
 
