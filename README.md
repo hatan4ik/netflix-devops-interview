@@ -16,12 +16,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 
 - [`curriculum/01-fine-grained-service-discovery.md`](curriculum/01-fine-grained-service-discovery.md) — Question 1: fine-grained service discovery across 1,000+ services with Envoy/Istio.
 
-Additional chapters will be added in the original interview-question sequence.
-
-### Downloadable editions
-
-- [`assets/Netflix_Scale_DevOps_Interview_Training_Pack_Nathanel_v2.pdf`](assets/Netflix_Scale_DevOps_Interview_Training_Pack_Nathanel_v2.pdf)
-- [`assets/Netflix_Scale_DevOps_Interview_Training_Pack_Nathanel_v2.docx`](assets/Netflix_Scale_DevOps_Interview_Training_Pack_Nathanel_v2.docx)
+Additional chapters will be added in the original interview-question sequence. The Markdown editions are the canonical repository source so they remain searchable, reviewable, and easy to improve through normal Git history.
 
 ## The 17-scenario sequence
 
