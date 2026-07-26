@@ -23,6 +23,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 - [`curriculum/05-custom-ami-validation-promotion.md`](curriculum/05-custom-ami-validation-promotion.md) — Question 5: immutable custom AMI construction, qualification, canary promotion, stop conditions, and replacement-based rollback.
 - [`curriculum/06-business-aware-kubernetes-probes.md`](curriculum/06-business-aware-kubernetes-probes.md) — Question 6: startup, liveness, readiness, capability health, graceful drain, overload protection, and probe-safe rollout design.
 - [`curriculum/07-dns-outage-service-mesh.md`](curriculum/07-dns-outage-service-mesh.md) — Question 7: layered DNS failure isolation across application resolvers, NodeLocal DNSCache, CoreDNS, service routing, conntrack, network policy, and mesh DNS capture.
+- [`curriculum/08-terraform-backend-state-lock-failure.md`](curriculum/08-terraform-backend-state-lock-failure.md) — Question 8: remote-state integrity, S3/DynamoDB locking, stale-lock investigation, safe force-unlock, reconciliation, recovery, and CI concurrency controls.
 
 ## Shared canonical prerequisites
 
