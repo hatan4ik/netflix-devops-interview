@@ -21,6 +21,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 - [`curriculum/03-multicloud-routing-identity-secrets.md`](curriculum/03-multicloud-routing-identity-secrets.md) — Question 3: multi-cloud routing, workload identity federation, and secret delivery.
 - [`curriculum/04-eks-systemd-node-failure-repair.md`](curriculum/04-eks-systemd-node-failure-repair.md) — Question 4: EKS node failure detection, fencing, repair, and replacement.
 - [`curriculum/05-custom-ami-validation-promotion.md`](curriculum/05-custom-ami-validation-promotion.md) — Question 5: immutable custom AMI construction, qualification, canary promotion, stop conditions, and replacement-based rollback.
+- [`curriculum/06-business-aware-kubernetes-probes.md`](curriculum/06-business-aware-kubernetes-probes.md) — Question 6: startup, liveness, readiness, capability health, graceful drain, overload protection, and probe-safe rollout design.
 
 ## Shared canonical prerequisites
 
