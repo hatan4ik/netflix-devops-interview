@@ -4,7 +4,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 
 > These are hypothetical interview scenarios and engineering exercises. They are not a claim about Netflix's private production architecture or its actual interview process.
 
-> **Canonical shared foundations:** Reusable Linux, Kubernetes, networking, service-mesh, eBPF, cloud, Terraform, identity, autoscaling, observability, reliability, and leadership chapters are consolidated in [`hatan4ik/staff-sre-platform-engineering-handbook`](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook). This repository remains the Netflix/media-delivery interview track. Existing foundational chapters here are migration sources until equivalent canonical coverage is verified.
+> **Canonical shared foundations:** Reusable Linux, Kubernetes, networking, service-mesh, eBPF, cloud, Terraform, identity, autoscaling, observability, incident response, reliability, and leadership chapters are consolidated in [`hatan4ik/staff-sre-platform-engineering-handbook`](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook). This repository remains the Netflix/media-delivery interview track. Existing foundational chapters here are migration sources until equivalent canonical coverage is verified.
 
 ## Repository contents
 
@@ -27,9 +27,9 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 - [`curriculum/09-mtls-failure-after-envoy-rollout.md`](curriculum/09-mtls-failure-after-envoy-rollout.md) — Question 9: mTLS rollout failures across certificates, SDS, trust bundles, SPIFFE identities, PeerAuthentication, DestinationRule, AuthorizationPolicy, xDS, and mixed proxy revisions.
 - [`curriculum/10-hpa-not-scaling-high-cpu.md`](curriculum/10-hpa-not-scaling-high-cpu.md) — Question 10 Netflix traffic-spike adapter; reusable autoscaling control-loop and capacity-realization theory is now canonical in the shared handbook.
 - [`curriculum/11-cache-sidecar-tail-latency.md`](curriculum/11-cache-sidecar-tail-latency.md) — Question 11: per-Pod cache topology, tail-latency decomposition, cold-cache amplification, stampede control, resource contention, connection pools, retry budgets, and origin protection.
-- [`curriculum/12-504s-while-health-checks-green.md`](curriculum/12-504s-while-health-checks-green.md) — Question 12: identifying the 504 issuer, tracing exhausted deadlines, separating health from business-path success, controlling retries and queues, streaming diagnostics, and graceful degradation.
+- [`curriculum/12-504s-while-health-checks-green.md`](curriculum/12-504s-while-health-checks-green.md) — Question 12 Netflix playback adapter; reusable request-path, cohort, evidence, and incident-response theory is now canonical in the shared handbook.
 - [`curriculum/13-sudden-nat-gateway-cost-increase.md`](curriculum/13-sudden-nat-gateway-cost-increase.md) — Question 13: NAT billing forensics, CloudWatch correlation, Flow Log top-talkers, workload attribution, endpoint regressions, cross-AZ routing, retry amplification, egress security, and durable cost controls.
-- [`curriculum/14-slo-error-budget-ownership.md`](curriculum/14-slo-error-budget-ownership.md) — Question 14: user-journey SLIs, error-budget mathematics, multi-window burn alerts, denominator integrity, protected slices, SLO-as-code, ownership, policy, adoption, and cultural change.
+- [`curriculum/14-slo-error-budget-ownership.md`](curriculum/14-slo-error-budget-ownership.md) — Question 14 Netflix organizational adapter; reusable SLI, SLO, error-budget, burn-rate, denominator, protected-cohort, policy, and governance theory is now canonical in the shared handbook.
 - [`curriculum/15-multi-region-failover-without-dns-only.md`](curriculum/15-multi-region-failover-without-dns-only.md) — Question 15: stable global traffic steering, RTO/RPO, active-passive design, write fencing, replication eligibility, dependency and capacity readiness, long-lived connections, failover, and controlled failback.
 
 ## Shared canonical prerequisites
@@ -44,6 +44,11 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
   - [Linux incident labs and production scenarios](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/07-linux-incident-labs.md)
 - [Canonical workload identity, federation, and SPIFFE chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/security/identity/workload-identity-federation.md)
 - [Canonical Kubernetes autoscaling and capacity-realization chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/kubernetes/autoscaling/control-loops-capacity-realization.md)
+- [Canonical request-path debugging chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/incident-response/request-path-debugging.md)
+- [Canonical cohort-analysis chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/incident-response/cohort-analysis.md)
+- [Canonical postmortem and corrective-action chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/incident-response/postmortems.md)
+- [Canonical evidence-beyond-dashboards chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/observability/evidence-beyond-dashboards.md)
+- [Canonical SLO and error-budget chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/reliability/slo/error-budgets.md)
 - [Canonical service-mesh, Envoy, Istio, and xDS module](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/tree/main/core/service-mesh)
   - [Fine-grained service discovery across large service estates](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/service-mesh/fine-grained-service-discovery.md)
 - [Canonical eBPF, Cilium, Hubble, Falco, and Tetragon chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/ebpf-security/cilium-hubble-falco-tetragon.md)
@@ -76,4 +81,4 @@ New reusable foundations must be written in the shared handbook. New files here 
 
 ## Core principle
 
-> At hyperscale, the objective is not to prevent every component failure. It is to ensure that no component, retry policy, health check, repair controller, state lock, identity bridge, or autoscaling loop can expand a local fault beyond its intended failure domain.
+> At hyperscale, the objective is not to prevent every component failure. It is to ensure that no component, retry policy, health check, repair controller, state lock, identity bridge, autoscaling loop, SLO denominator, or incident process can expand or hide a local fault beyond its intended failure domain.
