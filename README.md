@@ -27,6 +27,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 - [`curriculum/09-mtls-failure-after-envoy-rollout.md`](curriculum/09-mtls-failure-after-envoy-rollout.md) — Question 9: mTLS rollout failures across certificates, SDS, trust bundles, SPIFFE identities, PeerAuthentication, DestinationRule, AuthorizationPolicy, xDS, and mixed proxy revisions.
 - [`curriculum/10-hpa-not-scaling-high-cpu.md`](curriculum/10-hpa-not-scaling-high-cpu.md) — Question 10: HPA observation, replica calculation, resource-request semantics, Metrics Server, scale ownership, scheduling, readiness, and end-to-end capacity realization.
 - [`curriculum/11-cache-sidecar-tail-latency.md`](curriculum/11-cache-sidecar-tail-latency.md) — Question 11: per-Pod cache topology, tail-latency decomposition, cold-cache amplification, stampede control, resource contention, connection pools, retry budgets, and origin protection.
+- [`curriculum/12-504s-while-health-checks-green.md`](curriculum/12-504s-while-health-checks-green.md) — Question 12: identifying the 504 issuer, tracing exhausted deadlines, separating health from business-path success, controlling retries and queues, streaming diagnostics, and graceful degradation.
 
 ## Shared canonical prerequisites
 
