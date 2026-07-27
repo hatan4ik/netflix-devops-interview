@@ -16,7 +16,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 
 ### Ground-up curriculum and migration sources
 
-- [`curriculum/01-fine-grained-service-discovery.md`](curriculum/01-fine-grained-service-discovery.md) — Question 1: fine-grained service discovery across 1,000+ services with Envoy/Istio.
+- [`curriculum/01-fine-grained-service-discovery.md`](curriculum/01-fine-grained-service-discovery.md) — Question 1 Netflix/media adapter and original migration source for large-scale Envoy/Istio discovery.
 - [`curriculum/02-ebpf-cilium-runtime-security.md`](curriculum/02-ebpf-cilium-runtime-security.md) — Question 2: original deep source material for eBPF/Cilium runtime security.
 - [`curriculum/03-multicloud-routing-identity-secrets.md`](curriculum/03-multicloud-routing-identity-secrets.md) — Question 3: multi-cloud routing, workload identity federation, and secret delivery.
 - [`curriculum/04-eks-systemd-node-failure-repair.md`](curriculum/04-eks-systemd-node-failure-repair.md) — Question 4: EKS node failure detection, fencing, repair, and replacement.
@@ -39,6 +39,11 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
   - [Processes, scheduling, cgroup CPU, interrupts, and load](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/02-processes-scheduler.md)
   - [Memory, page cache, NUMA, reclaim, PSI, and OOM](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/03-memory.md)
   - [VFS, filesystems, block I/O, NVMe, and latency](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/04-storage-io.md)
+  - [Networking, namespaces, cgroups, containers, and Linux security](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/05-networking-containers-security.md)
+  - [Observability, profiling, eBPF, and production debugging](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/06-observability-debugging.md)
+  - [Linux incident labs and production scenarios](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/linux/07-linux-incident-labs.md)
+- [Canonical service-mesh, Envoy, Istio, and xDS module](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/tree/main/core/service-mesh)
+  - [Fine-grained service discovery across large service estates](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/service-mesh/fine-grained-service-discovery.md)
 - [Canonical eBPF, Cilium, Hubble, Falco, and Tetragon chapter](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/core/ebpf-security/cilium-hubble-falco-tetragon.md)
 - [Consolidated curriculum map](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/curriculum-map.md)
 - [Migration and ownership plan](https://github.com/hatan4ik/staff-sre-platform-engineering-handbook/blob/main/MIGRATION_PLAN.md)
