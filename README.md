@@ -25,6 +25,7 @@ A public, principal-level training repository for advanced DevOps, SRE, Platform
 - [`curriculum/07-dns-outage-service-mesh.md`](curriculum/07-dns-outage-service-mesh.md) — Question 7: layered DNS failure isolation across application resolvers, NodeLocal DNSCache, CoreDNS, service routing, conntrack, network policy, and mesh DNS capture.
 - [`curriculum/08-terraform-backend-state-lock-failure.md`](curriculum/08-terraform-backend-state-lock-failure.md) — Question 8: remote-state integrity, S3/DynamoDB locking, stale-lock investigation, safe force-unlock, reconciliation, recovery, and CI concurrency controls.
 - [`curriculum/09-mtls-failure-after-envoy-rollout.md`](curriculum/09-mtls-failure-after-envoy-rollout.md) — Question 9: mTLS rollout failures across certificates, SDS, trust bundles, SPIFFE identities, PeerAuthentication, DestinationRule, AuthorizationPolicy, xDS, and mixed proxy revisions.
+- [`curriculum/10-hpa-not-scaling-high-cpu.md`](curriculum/10-hpa-not-scaling-high-cpu.md) — Question 10: HPA observation, replica calculation, resource-request semantics, Metrics Server, scale ownership, scheduling, readiness, and end-to-end capacity realization.
 
 ## Shared canonical prerequisites
 
